@@ -4,21 +4,127 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-image: url(/assets/images/black2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
     padding: 1rem;
-    background-color: #fff;
+    background-color: transparent;
+    margin: 1rem auto;
+    border-radius: 1rem;
 }
 
-@media screen and (min-width: 992px) {
+.content h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2.5rem;
+    align-items: center;
+    letter-spacing: 1rem;
+    font-weight: bold;
+    text-overflow: clip;
+}
+
+#color1  {font-family: 'Roboto' sans-serif; color: blue; }
+#color2  {font-family: 'Roboto' sans-serif; color: rgb(42, 195, 18); }
+#color3  {font-family: 'Roboto' sans-serif; color: green; }
+#color4  {font-family: 'Roboto' sans-serif; color: yellow; }
+#color5  {font-family: 'Roboto' sans-serif; color: purple; }
+#color6  {font-family: 'Roboto' sans-serif; color: rgb(255, 111, 0); }
+#color7  {font-family: 'Roboto' sans-serif; color: green; }
+#color8  {font-family: 'Roboto' sans-serif; color: lawngreen; }
+#color9  {font-family: 'Roboto' sans-serif; color: rgb(175, 36, 150); }
+#color10 {font-family: 'Roboto' sans-serif; color: lightseagreen; }
+#color11 {font-family: 'Roboto' sans-serif; color: yellowgreen; }
+#color12 {font-family: 'Roboto' sans-serif; color: orangered; }
+
+footer {
+    width: 100vw;
+    padding-top: 10px;
+    background-color: rgba(111, 108, 108, 0.9);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    color: rgb(53, 3, 253);
+    text-decoration: none;
+}
+
+footer p {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: #f0f8ff;
+    max-width: 850px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 1rem;
+}
+
+footer span {
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 0.17rem;
+}
+
+@media screen and (max-width: 992px) {
     .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
+        width: 95vw;
+        padding: 1rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+        letter-spacing: 0.8rem;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        width: 90vw;
+        padding: 0.8rem;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.6rem;
+    }
+    
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .content {
+        width: 80vw;
+        padding: 0.6rem;
+    }
+
+    .content h1 {
+        font-size: 1.6rem;
+        letter-spacing: 0.4rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
     }
 }
